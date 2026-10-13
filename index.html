@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller: Gestor de Tareas Semiestructurado</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="contenedor">
+        <h1>Gestor de Tareas</h1>
+        
+        <!-- Formulario para la captura de nuevas tareas -->
+        <form id="formulario-tareas">
+            <input type="text" id="titulo-tarea" placeholder="Título de la tarea" required>
+            <textarea id="descripcion-tarea" placeholder="Descripción de la tarea" required></textarea>
+            <button type="submit">Agregar Tarea</button>
+        </form>
+
+        <!-- Botones para la exportación de datos a formatos semiestructurados -->
+        <div class="acciones-datos">
+            <button id="btn-exportar-json" class="btn-secundario">Exportar a JSON</button>
+            <button id="btn-exportar-xml" class="btn-secundario">Exportar a XML</button>
+        </div>
+
+        <h2>Mis Tareas Activas</h2>
+        <!-- Contenedor dinámico donde se inyectarán las tareas creadas -->
+        <ul id="lista-tareas"></ul>
+    </div>
+
+    <!-- Enlace al script de lógica y control -->
+    <script src="aplicacion.js"></script>
+</body>
+</html>
